@@ -3,7 +3,9 @@
 A Neovim plugin to hide sensitive content in `.env` files.
 
 ## Preview
-![output](https://github.com/user-attachments/assets/6242bb2d-1ce3-43d7-8d4a-a85ad35d7c9f)
+
+https://github.com/user-attachments/assets/1fa18dfe-2e27-4916-9194-b9e5f860159c
+
 
 
 ## Features
