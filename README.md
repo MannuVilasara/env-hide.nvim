@@ -16,7 +16,6 @@ A Neovim plugin to hide sensitive content in `.env` files.
 ```lua
 {
   'MannuVilasara/env-hide.nvim',
-  ft = { 'env', 'dotenv' },
   config = function()
     require('env-hide').setup()
   end
