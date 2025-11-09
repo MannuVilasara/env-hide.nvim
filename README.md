@@ -84,7 +84,13 @@ require('env-hide').setup({
 
 ## How it works
 
-The plugin uses Neovim's virtual text and extmarks to overlay asterisks on sensitive values without modifying the actual file content. When you save the file, the original values are preserved.
+The plugin temporarily replaces the buffer content with hidden values (asterisks) when you enable hiding. The original values are stored in memory and automatically restored when:
+
+- You toggle visibility with `:EnvShow` or `:EnvToggle`
+- You save the file (`:w`) - the original values are saved, not the hidden ones
+- You close the buffer
+
+This means the actual file content is never modified - only what you see on screen changes.
 
 ## License
 
